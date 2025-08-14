@@ -1,20 +1,20 @@
-# This script is hosted on website for Binod Rijal
+# This script is hosted on https://get.activated.win for https://massgrave.dev
 
 if (-not $args) {
     Write-Host ''
-    Write-Host 'Microsoft Official Licensing API Of Binod Rijal:' -NoNewline
-    Write-Host 'https://binod-rijal.com.np' -ForegroundColor Green
+    Write-Host 'Official Microsoft API Made By : ' -NoNewline
+    Write-Host 'Binod Rijal' -ForegroundColor Green
     Write-Host ''
 }
 
 & {
     $psv = (Get-Host).Version.Major
-    $troubleshoot = 'Contact Binod Rijal'
+    $troubleshoot = 'https://massgrave.dev/troubleshoot'
 
     if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
         $ExecutionContext.SessionState.LanguageMode
         Write-Host "PowerShell is not running in Full Language Mode."
-        Write-Host "Help - Contact Binod Rijal" -ForegroundColor White -BackgroundColor Blue
+        Write-Host "Help - https://gravesoft.dev/fix_powershell" -ForegroundColor White -BackgroundColor Blue
         return
     }
 
@@ -24,7 +24,7 @@ if (-not $args) {
     catch {
         Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Red
         Write-Host "Powershell failed to load .NET command."
-        Write-Host "Help - Contact Binod Rijal" -ForegroundColor White -BackgroundColor Blue
+        Write-Host "Help - https://gravesoft.dev/in-place_repair_upgrade" -ForegroundColor White -BackgroundColor Blue
         return
     }
 
@@ -50,7 +50,7 @@ if (-not $args) {
 
     try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
-$URLs = @(
+    $URLs = @(
         'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/3917497c826685ffc6f3d025397e5c8c4f7fa744/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
         'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=3917497c826685ffc6f3d025397e5c8c4f7fa744',
         'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/3917497c826685ffc6f3d025397e5c8c4f7fa744/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
